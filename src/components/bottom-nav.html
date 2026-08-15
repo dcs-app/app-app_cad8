@@ -1,0 +1,38 @@
+<nav class="bottom-nav fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around items-center h-14 md:hidden">
+  <a href="/index.html" class="flex flex-col items-center text-sm text-gray-700">
+    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"></path></svg>
+    Home
+  </a>
+  <a href="/products.html" class="flex flex-col items-center text-sm text-gray-700">
+    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3z"></path></svg>
+    Shop
+  </a>
+  <a href="/cart.html" class="flex flex-col items-center text-sm text-gray-700">
+    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-13L6 6z"></path></svg>
+    Cart
+  </a>
+  <a href="/contact.html" class="flex flex-col items-center text-sm text-gray-700">
+    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1118 0z"></path></svg>
+    Contact
+  </a>
+</nav>
+<!-- TRD-PERMANENCE-FOOTER -->
+<div id="trd-permanence-footer" class="trd-permanence-footer" style="display:none;text-align:center;padding:14px 16px 18px;color:#888;font-size:11px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:transparent;line-height:1.5;">
+  <a href="https://storage.dcsai.ai/api/storage/cert/42ef5b33-c118-47f4-bde0-2f2a680fa9ce" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">
+    <span style="display:inline-block;vertical-align:middle;margin-right:4px;">🔗</span>
+    <span>Permanence verified by <strong>DCS</strong> · Filecoin</span>
+  </a>
+</div>
+<script data-trd-permanence-footer="1">
+(function(){
+  // Only claim "Permanence verified · Filecoin" once a real cert exists — never
+  // show the badge (or a dead cert link) before the receipt/pin is actually stored.
+  try {
+    var f = document.getElementById('trd-permanence-footer');
+    if (!f) return;
+    fetch("https://storage.dcsai.ai/api/storage/cert/42ef5b33-c118-47f4-bde0-2f2a680fa9ce", { method: 'GET' })
+      .then(function(r){ if (r && r.ok) f.style.display = 'block'; })
+      .catch(function(){ /* silent — footer stays hidden */ });
+  } catch(e){ /* silent */ }
+})();
+</script>

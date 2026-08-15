@@ -1,0 +1,113 @@
+/* Mobile‑first adjustments */
+
+/* Ensure tap targets meet accessibility minimum */
+button,
+a,
+input,
+select,
+textarea {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Pull‑to‑refresh placeholder */
+html {
+  overscroll-behavior-y: contain;
+}
+
+/* Swipe gesture placeholder */
+.swipeable {
+  touch-action: pan-y;
+}
+
+/* Safe‑area handling for bottom navigation */
+.bottom-nav {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Fluid container */
+.container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Responsive grid for product listings */
+@media (max-width: 768px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Image responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Touch‑friendly button styling */
+button,
+a.button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+
+/* Hide bottom navigation on larger screens */
+@media (min-width: 768px) {
+  .bottom-nav {
+    display: none;
+  }
+}
+
+/* Header scaling for very small screens */
+@media (max-width: 375px) {
+  .header-inner,
+  .primary-nav,
+  .header-actions {
+    gap: 12px;
+  }
+  .brand {
+    font-size: 1.25rem;
+  }
+  .cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 0.65rem;
+  }
+}
+
+/* Ensure any custom scroll containers respect touch */
+.scrollable {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Bottom navigation height ensures 44px minimum tap area */
+.bottom-nav a {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add a subtle hover/focus effect for accessibility */
+.bottom-nav a:focus,
+.bottom-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* End of mobile.css */

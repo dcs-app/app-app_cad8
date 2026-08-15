@@ -1,0 +1,225 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/checkout",
+      "destination": "/checkout.html"
+    },
+    {
+      "source": "/cart",
+      "destination": "/cart.html"
+    },
+    {
+      "source": "/search",
+      "destination": "/search.html"
+    },
+    {
+      "source": "/bestsellers",
+      "destination": "/bestsellers.html"
+    },
+    {
+      "source": "/new-arrivals",
+      "destination": "/new-arrivals.html"
+    },
+    {
+      "source": "/deals",
+      "destination": "/deals.html"
+    },
+    {
+      "source": "/category",
+      "destination": "/category.html"
+    },
+    {
+      "source": "/products",
+      "destination": "/products.html"
+    },
+    {
+      "source": "/track-order",
+      "destination": "/track-order.html"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/dashboard.html"
+    },
+    {
+      "source": "/returns",
+      "destination": "/returns.html"
+    },
+    {
+      "source": "/wishlist",
+      "destination": "/wishlist.html"
+    },
+    {
+      "source": "/brands",
+      "destination": "/brands.html"
+    },
+    {
+      "source": "/flash-sale",
+      "destination": "/flash-sale.html"
+    },
+    {
+      "source": "/bundles",
+      "destination": "/bundles.html"
+    },
+    {
+      "source": "/reviews",
+      "destination": "/reviews.html"
+    },
+    {
+      "source": "/login",
+      "destination": "/login.html"
+    },
+    {
+      "source": "/signup",
+      "destination": "/signup.html"
+    },
+    {
+      "source": "/compare",
+      "destination": "/compare.html"
+    },
+    {
+      "source": "/shipping",
+      "destination": "/shipping.html"
+    },
+    {
+      "source": "/help",
+      "destination": "/help.html"
+    },
+    {
+      "source": "/recommendations",
+      "destination": "/recommendations.html"
+    },
+    {
+      "source": "/account",
+      "destination": "/account.html"
+    },
+    {
+      "source": "/orders",
+      "destination": "/orders.html"
+    },
+    {
+      "source": "/product-qa",
+      "destination": "/product-qa.html"
+    },
+    {
+      "source": "/pre-order",
+      "destination": "/pre-order.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/store-locator",
+      "destination": "/store-locator.html"
+    },
+    {
+      "source": "/gift-cards",
+      "destination": "/gift-cards.html"
+    },
+    {
+      "source": "/coming-soon",
+      "destination": "/coming-soon.html"
+    },
+    {
+      "source": "/size-guide",
+      "destination": "/size-guide.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html"
+    },
+    {
+      "source": "/pricing",
+      "destination": "/pricing.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/legal",
+      "destination": "/legal.html"
+    },
+    {
+      "source": "/coupons",
+      "destination": "/coupons.html"
+    },
+    {
+      "source": "/press",
+      "destination": "/press.html"
+    },
+    {
+      "source": "/team",
+      "destination": "/team.html"
+    },
+    {
+      "source": "/careers",
+      "destination": "/careers.html"
+    },
+    {
+      "source": "/wholesale",
+      "destination": "/wholesale.html"
+    },
+    {
+      "source": "/sell-with-us",
+      "destination": "/sell-with-us.html"
+    },
+    {
+      "source": "/testimonials",
+      "destination": "/testimonials.html"
+    },
+    {
+      "source": "/sitemap",
+      "destination": "/sitemap.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/accessibility",
+      "destination": "/accessibility.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*\\.html)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate, trd-managed-42.21"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "max-age=0"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "max-age=0"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate, trd-managed-42.21"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "max-age=0"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "max-age=0"
+        }
+      ]
+    }
+  ]
+}
